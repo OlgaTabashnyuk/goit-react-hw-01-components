@@ -9,7 +9,7 @@ const FriendList = ({friends}) => (
              key={id} 
              className={styles.friendList__item}>
                 <span className={styles.status} style={{backgroundColor: isOnline ? "rgb(137, 212, 24)" : "rgb(235, 23, 8)"}}></span>
-                <img className={styles.avatar} src={avatar} alt={name} width="48" />
+                <img className={styles.avatar} src={avatar} alt={name} width="60" />
                 <p className="name">{name}</p>
                 </li>
         ))}
