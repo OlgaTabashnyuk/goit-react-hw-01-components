@@ -1,8 +1,7 @@
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 import defaultImage from '../../components/default.jpg';
 import PropTypes from 'prop-types';
 import styles from './SocialProfile.module.css';
-console.log(styles);
 
 const SocialProfile = ({ avatar, name, tag, location, stats }) => (
   <div className={styles.wrapper}>
@@ -10,7 +9,7 @@ const SocialProfile = ({ avatar, name, tag, location, stats }) => (
       <img
         className={styles.profile__avatar}
         src={avatar}
-        alt={name}
+        alt={`Аватар пользователя ${name}}`}
         width="150"
       />
       <p className={styles.name}>{name}</p>
